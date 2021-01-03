@@ -1,0 +1,36 @@
+// nakładka w tle
+@mixin an-bg-overlay($color, $opacity) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    content: "";
+    z-index: 0;
+    background: none no-repeat $color;
+    opacity: $opacity;
+}
+
+// pozycja relatywna i zwiększony z-index
+@mixin an-relative-zindex {
+    position: relative;
+    z-index: 1000;
+}
+
+// rozmiar 
+@mixin an-size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+// tekst 300 secondary
+@mixin an-font-light-secondary {
+    font-weight: 300;
+    font-family: $an-font-family-extra;
+}
+
+// Podstawowe przejście
+@mixin an-basic-transition {
+    transition: all .25s ease-in-out;
+}

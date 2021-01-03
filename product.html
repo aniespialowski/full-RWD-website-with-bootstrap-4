@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Architektura Wnętrz - Bootstrap 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="bg-primary an-header">
+        <div class="container">
+            <ul class="nav flex-column flex-md-row justify-content-md-end text-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="index.html">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="post-list.html">Aktualności</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link an-header-item-link an-header-item-active" href="shop.html">Sklep</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="about.html">O nas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="contact.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="#">
+                        <img src="images/ui/icon-top-search.png" alt="wyszukiwarka">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="#">
+                        <img src="images/ui/icon-top-cart.png" alt="koszyk">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Unit -->
+    <div class="jumbotron text-center an-hero">
+        <div class="container an-hero-content">
+            <h1 class=" text-uppercase text-white an-hero-header">Aranżacja wnętrz</h1>
+            <img class="img-fluid an-hero-subheader" src="images/design-subheader.png" alt="shubheader">
+        </div>
+    </div>
+    
+    <div class="an-product-page">
+        <div class="container">
+            <!-- zdjęcie oraz dane produktu -->
+            <div class="an-product-page-data">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="img-fluid an-product-page-img" src="images/pages/product-big.jpg" alt="pojedyńczy produkt">
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="text-uppercase an-product-name an-text-large">Nazwa produktu</h4>
+                        <div class="d-flex align-items-center justify-content-between an-product-page-price-box">
+                            <span class="an-product-price an-text-large">85zł</span>
+                            <img src="images/ui/stars.png" alt="ocena produktu">
+                        </div>
+                        <div class="an-hr"></div>
+                        <p class="an-product-page-short-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae consectetur soluta tempora, numquam dolore eos. Beatae ipsum sapiente exercitationem praesentium quam, facere eveniet, earum veritatis cum pariatur quo dignissimos!</p>
+                        <div class="an-product-page-quantity">
+                            <span class="text-uppercase an-product-page-quantity-label">ilość sztuk</span>
+                            <input class="text-center an-product-page-quantity-input" type="number" value="1">
+                        </div>
+                        <button class="btn btn-primary text-white text-uppercase an-product-page-add-to-cart">Dodaj do koszyka</button>
+                    </div>
+                </div>
+            </div>
+            <div class="an-hr an-product-page-hr"></div>
+            <!-- opis produktu -->
+            <div class="an-product-page-desc">
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-tabs text-uppercase an-product-page-desc-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Opis produktu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Opinie o produkcie</a>
+                            </li>
+                        </ul>
+                        <div class="an-product-page-desc-text">
+                            <h4 class="mb-3 an-text-large">Lorem ipsum dolor sit adipisicing elit.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam similique voluptatem eligendi consectetur, repudiandae magnam obcaecati! Modi consectetur, fugiat perferendis voluptatem ullam quos dignissimos impedit magni? Quos, dolor quaerat. Et omnis cum nihil rem illum quia, amet qui, enim, fugiat aut voluptas distinctio nostrum iure! Labore voluptate deleniti similique voluptas distinctio nulla magnam eligendi fuga! Aliquid omnis, quod eaque voluptates, deserunt fugit aperiam, corporis in nihil provident dicta maiores accusantium beatae illo cupiditate ipsa id.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- produkty powiązane -->
+            <div class="an-product-page-related">
+                <h3 class="text-uppercase an-product-page-related-header an-text-large">Podobne produkty</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="an-product-item">
+                        <a class="d-flex justify-content-center an-product-item-img" href="product.html">
+                            <img class="align-self-center" src="images\pages\product-3-sm.png" alt="zdjęcie produktu">
+                        </a>
+                        <a class="an-product-item-link" href="product.html">
+                            <h5 class="text-uppercase an-product-name">Nazwa produktu</h5>
+                        </a>
+                        <p class="an-text-small an-product-item-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="an-product-price">85zł</span>
+                            <img src="images/ui/stars.png" alt="ocena produktu">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="an-product-item">
+                        <a class="d-flex justify-content-center an-product-item-img" href="product.html">
+                            <img class="align-self-center" src="images\pages\product-6-sm.png" alt="zdjęcie produktu">
+                        </a>
+                        <a class="an-product-item-link" href="product.html">
+                            <h5 class="text-uppercase an-product-name">Nazwa produktu</h5>
+                        </a>
+                        <p class="an-text-small an-product-item-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="an-product-price">85zł</span>
+                            <img src="images/ui/stars.png" alt="ocena produktu">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="an-product-item">
+                        <a class="d-flex justify-content-center an-product-item-img" href="product.html">
+                            <img class="align-self-center" src="images\pages\product-7-sm.png" alt="zdjęcie produktu">
+                        </a>
+                        <a class="an-product-item-link" href="product.html">
+                            <h5 class="text-uppercase an-product-name">Nazwa produktu</h5>
+                        </a>
+                        <p class="an-text-small an-product-item-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="an-product-price">85zł</span>
+                            <img src="images/ui/stars.png" alt="ocena produktu">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="an-product-item">
+                        <a class="d-flex justify-content-center an-product-item-img" href="product.html">
+                            <img class="align-self-center" src="images\pages\product-8-sm.png" alt="zdjęcie produktu">
+                        </a>
+                        <a class="an-product-item-link" href="product.html">
+                            <h5 class="text-uppercase an-product-name">Nazwa produktu</h5>
+                        </a>
+                        <p class="an-text-small an-product-item-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="an-product-price">85zł</span>
+                            <img src="images/ui/stars.png" alt="ocena produktu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stopka -->
+    <div class="an-footer-top">
+        <div class="container an-footer-top-content">
+            <div class="row">
+                <!-- pierwsza kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">O nas</h4>
+                    <p class="an-footer-text an-footer-p">Jesteśmy rodzinną firmą, która oferuje kompleksowe projekty architektoniczne zarówno dla podmiotów prywatnych jak i przedsiębiorstw, dla których ważne są walory estetyczne, podkreślające indywidualny charakter każdego wnętrza.</p>
+                </div>
+                <!-- druga kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">Nawigacja</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="an-footer-text" href="#">Regulamin serwisu</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">Logowanie na konto</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">Wsparcie techniczne</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">FAQ & Pomoc</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">Kariera</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- trzecia kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">Kontakt</h4>
+                    <ul class="list-unstyled an-footer-text an-footer-contact-list">
+                        <li class="an-footer-contact-item">
+                            <span class="mr-2"><img src="images/ui/contact-footer-icon-pin.png" alt="ikona mail"></span>
+                            ul. Sobieskiego 10
+                        </li>
+                        <li class="an-footer-contact-item">
+                            <span class="mr-2"><img src="images/ui/contact-footer-icon-phone.png" alt="ikona mail"></span>
+                            666-333-111
+                        </li>
+                        <li class="an-footer-contact-item">
+                            <span class="mr-2"><img src="images/ui/contact-footer-icon-email.png" alt="ikona mail"></span>
+                            bullssquad@biuro.pl
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-between w-75">
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-fb.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-inst.png" alt="instagram ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-pin.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-plus.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-twit.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <!-- czwarta kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">Newsletter</h4>
+                    <form action="">
+                        <div class="form-group an-newsletter-form-group">
+                            <label class="an-footer-text" for="email">Bądź na bieżąco z najważniejszymi wydarzeniami ze świata aranżacji wnetrz.</label>
+                            <input class="form-control form-control-sm w-75 an-newsletter-form-control" type="email" id="email" placeholder="Adres email">
+                        </div>
+                        <button class="btn btn-primary text-white text-uppercase an-newsletter-btn">Subskrybuj</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="an-copy">
+        <div class="container text-center">
+            <span class="d-block">&copy; Copyright 2020 <a href="http://niespialowski-portfolio.pl/">Andrzej Nieśpiałowski</a></span>
+            <span class="d-block an-copy-second">Graphics design by Pixabay.com</a></span>
+        </div>
+    </div>
+
+</body>
+</html>

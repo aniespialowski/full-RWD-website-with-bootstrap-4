@@ -1,0 +1,66 @@
+.an-post-box {
+	position: relative;
+}
+.an-post-box-date {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	@include an-size(75px, 75px);
+	@include media-breakpoint-up(md) {
+		@include an-size(95px, 95px);
+	}
+}
+
+.an-post-box-date-body {
+	max-width: 90%;
+	@include media-breakpoint-up(md) {
+		max-width: 50%;
+	}
+}
+
+.an-post-box-date-value {
+	margin-top: .3rem;
+	font-size: .625rem;
+	@include an-font-light-secondary;
+}
+
+.an-post-box-body {
+	position: relative;
+	padding: 10px 0 0 10px;	
+}
+
+.an-post-box-content {
+	position: absolute;
+	top: 30%;
+	right: 0;
+	bottom: 0;
+	left: 10px;
+	padding: 20px 30px;
+	&:after {
+		@include an-bg-overlay($black, .6)
+	}
+	@include media-breakpoint-up(md) {
+		top: 50%;
+	}
+}
+
+.an-post-box-content-inner {
+	@include an-relative-zindex;
+}
+
+.an-post-box-title {
+	font-size: 1.375rem;
+	margin-bottom: .85rem;
+
+}
+
+.an-post-box-text {
+	margin-bottom: .3rem;
+	line-height: 1.66;
+}
+
+.an-post-box-link {
+	font-size: .625rem;
+	@include an-font-light-secondary;	
+}

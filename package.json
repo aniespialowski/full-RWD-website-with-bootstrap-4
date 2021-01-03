@@ -1,0 +1,16 @@
+{
+  "name": "architectonic-company-bootstrap4",
+  "version": "1.0.0",
+  "description": "a complete static website of an fictional company offering broadly understood architecture",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrzej Nieśpiałowski",
+  "license": "ISC"
+}

@@ -1,0 +1,11 @@
+.an-header-item-link {
+    font-size: .75rem;
+    @include media-breakpoint-up(md) {
+        padding: 1.65rem 1rem;
+    }
+}
+
+// aktywna pozycja menu
+.an-header-item-active {
+    background: $an-white;
+}

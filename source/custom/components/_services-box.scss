@@ -1,0 +1,38 @@
+.an-services-box {
+    margin-bottom: 40px;
+}
+
+.an-services-box-top {
+   margin-bottom: 1.4rem; 
+}
+
+.an-services-box-img {
+    margin: 10px 20px 0 10px;
+    @include an-relative-zindex;
+}
+
+.an-services-box-title {
+    margin-top: 1.75rem;
+}
+
+.an-services-box-header {
+    font-size: 1.125rem;
+    line-height: 1.2;
+    @include an-font-light-secondary;
+}
+
+.an-services-box-text {
+    line-height: 2;
+}
+
+.an-services-box-shadow {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    background-color: rgba($an-black, .125);
+    @include an-size(85px, 85px);
+}
+
+.an-services-box-active {
+    background-color: rgba($an-accent-color, 1s);
+}

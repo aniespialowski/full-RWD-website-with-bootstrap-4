@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Architektura Wnętrz - Bootstrap 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="bg-primary an-header">
+        <div class="container">
+            <ul class="nav flex-column flex-md-row justify-content-md-end text-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="index.html">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link an-header-item-link an-header-item-active" href="post-list.html">Aktualności</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="shop.html">Sklep</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="about.html">O nas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="contact.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="#">
+                        <img src="images/ui/icon-top-search.png" alt="wyszukiwarka">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="#">
+                        <img src="images/ui/top-cart-icon.png" alt="koszyk">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Unit -->
+    <div class="jumbotron text-center an-hero">
+        <div class="container an-hero-content">
+            <h1 class=" text-uppercase text-white an-hero-header">Aranżacja wnętrz</h1>
+            <img class="img-fluid an-hero-subheader" src="images/design-subheader.png" alt="shubheader">
+        </div>
+    </div>
+
+    <!-- Lista wpisów -->
+    <div class="an-post-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="an-post-item">
+                        <div class="an-post-box">
+                            <div class="text-center bg-primary d-flex align-items-center an-post-box-date">
+                                <div class="mx-auto an-post-box-date-body">
+                                    <img class="d-none d-md-block mx-auto" src="images/ui/date-icon.png" alt="kalendarz">
+                                    <span class="text-white d-block an-post-box-date-value">14 GRU 2020</span>
+                                </div>
+                            </div>
+                            <div class="an-post-box-body">
+                                <div class="an-post-box-img">
+                                    <img class="img-fluid" src="images/posts/post-1.jpg" alt="post 1">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="d-block text-uppercase an-post-item-link" href="post-list.html">
+                            <h3><img class="mr-2 mb-2" src="images/ui/back.png" alt="powrót">Strona Główna</h3>
+                        </a>
+                        <p>Z dumą możemy pochwalić się realizacją projektu biura dla jednej z większych firm marketingowych w Polsce. Projekt wymagał od nas dużego nakładu pracy, ale efekt finalny był tego warty. Lokal będzie gotowy do użytku już za niecały miesiąc. </p>
+                        <p>Biuro o powierzchni ponad 400m2 zostało zaprojektowane z myślą o tradycji oraz estetyce pozostałych lokali, ale z drugiej strony jest biurem bardzo nowoczesnym, jasnym i przestrzennym. Świadomość inwestorów, wspólna szczegółowa analiza przestrzeni oraz zaangażowanie zespołu projektującego dały bardzo ciekawy rezultat!</p>
+                        <p>Poniżej etapy projektu:</p>
+                        <ul>
+                            <li>Krok pierwszy – badanie terenu</li>
+                            <li>Krok drugi – sondowanie ludzi</li>
+                            <li>Krok trzeci – wytyczenie kierunków działania</li>   
+                            <li>Krok czwarty – plan działania</li>    
+                            <li>Krok piąty – realizacja i odbiór</li>    
+                        </ul>
+                        <div class="an-hr"></div>
+                        <!-- komentarze -->
+                        <div class="an-comments">
+							<h4 class="an-comments-header">Komentarze (2)</h4>
+							<div class="media an-comment">
+								<div class="d-flex align-items-center justify-content-center text-center bg-primary an-comment-avatar">
+									<img src="images/ui/user-avatar.png" alt="avatar">
+								</div>
+								<div class="media-body an-text-small">
+									<div class="an-comment-meta">
+										<span class="an-comment-username">Jan Kowalski</span><br>
+										<span class="an-comment-date">15 grudnia 2020 | 20:06</span>
+									</div>
+									<div class="d-flex align-items-start an-comment-content">
+										<p class="an-comment-text">Fantastyczna robota Panowie. Biuro wygląda wspaniale. Dziękuję za wasz profesjonalizm oraz doskonałą współpracę.</p>
+										<img class="align-self-center" src="images/ui/reply-arrow.png" alt="odpowiedz">
+									</div>
+									<!-- zagniezdzony komentarz -->
+									<div class="media an-comment">
+										<div class="d-flex align-items-center justify-content-center text-center bg-primary an-comment-avatar">
+											<img src="images/ui/user-avatar.png" alt="avatar">
+										</div>
+										<div class="media-body an-text-small">
+											<div class="an-comment-meta">
+												<span class="an-comment-username">Andrzej Nowak</span><br>
+												<span class="an-comment-date">15 grudnia 2020 | 20:48</span>
+											</div>
+											<div class="d-flex align-items-start an-comment-content">
+												<p class="an-comment-text">Dziękujęmy Jan za miłe słowa, zarówno w swoim imieniu jak również pozostałych członków zespołu. Mam nadzieję, że to dopiero początek naszej dalszej owocnej współpracy. Wszystkiego dobrego!</p>
+												<img class="align-self-center" src="images/ui/reply-arrow.png" alt="odpowiedz">
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                            <div class="an-hr"></div>
+                            <!-- Formularz do komentarzy -->
+                            <div class="an-comments-form">
+                                <form class="an-form" action="#">
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="name">Twoje imię i nazwisko</label>
+                                            <input class="form-control an-comments-form-control" type="text" id="name">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="email">Adres email</label>
+                                            <input class="form-control an-comments-form-control" type="email" id="email">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col">
+                                            <label for="comment">Twój komentarz</label>
+                                            <textarea class="form-control an-comments-form-control" id="comment" cols="30" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-lg text-white an-comments-form-btn">Wyślij komentarz</button>
+                                </form>
+                            </div>
+						</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <!-- widget szukaj -->
+                    <div class="an-post-widget">
+                        <div class="input-group an-post-widget-search">
+                            <input class="form-control an-post-widget-search-input" type="search" placeholder="SZUKAJ">
+                            <span class="input-group-addon">
+                                <img src="images/ui/icon-top-search.png" alt="szukaj wpisu">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- widget archiwum -->
+                    <div class="an-post-widget">
+                            <h4 class="text-uppercase an-post-widget-header">Archiwum</h4>
+                            <div class="w-75 an-hr"></div>
+                            <div class="an-post-widget-archive">
+                                <h5 class="an-post-archive-header">2019</h5>
+                                <h5 class="an-post-archive-header">2020</h5>
+                                <ul class="list-unstyled an-post-widget-archive-list">
+                                    <li class="an-post-widget-list-item">
+                                        <a class="an-post-widger-link" href="#">styczeń <span class="float-right">(10)</span></a>
+                                    </li>
+                                    <li class="an-post-widget-list-item">
+                                        <a class="an-post-widger-link" href="#">luty <span class="float-right">(23)</span></a>
+                                    </li>
+                                    <li class="an-post-widget-list-item">
+                                        <a class="an-post-widger-link" href="#">marzec <span class="float-right">(45)</span></a>
+                                    </li>
+                                    <li class="an-post-widget-list-item">
+                                        <a class="an-post-widger-link" href="#">kwiecień <span class="float-right">(12)</span></a>
+                                    </li>
+                                    <li class="an-post-widget-list-item">
+                                        <a class="an-post-widger-link" href="#">maj <span class="float-right">(34)</span></a>
+                                    </li>
+                                    <li class="an-post-widget-list-item">
+                                        <a class="an-post-widger-link" href="#">czerwiec <span class="float-right">(60)</span></a>
+                                    </li>
+                                    <li class="an-post-widget-list-item">
+                                        <a class="an-post-widger-link" href="#">lipiec <span class="float-right">(89)</span></a>
+                                    </li>
+                                    <li class="an-post-widget-list-item">
+                                        <a class="an-post-widger-link" href="#">sierpień <span class="float-right">(101)</span></a>
+                                    </li>
+                                    <li class="an-post-widget-list-item">
+                                        <a class="an-post-widger-link" href="#">wrzesień <span class="float-right">(152)</span></a>
+                                    </li>
+                                    <li class="an-post-widget-list-item">
+                                        <a class="an-post-widger-link" href="#">październik <span class="float-right">(98)</span></a>
+                                    </li>
+                                    <li class="an-post-widget-list-item">
+                                        <a class="an-post-widger-link" href="#">listopad <span class="float-right">(76)</span></a>
+                                    </li>
+                                    <li class="an-post-widget-list-item">
+                                        <a class="an-post-widger-link" href="#">grudzień <span class="float-right">(86)</span></a>
+                                    </li>
+                                </ul> 
+                            </div>
+                    </div>
+                    <!-- Widget popularne wpisy -->
+                    <div class="an-post-widget">
+                        <h4 class="text-uppercase an-post-widget-header">Archiwum</h4>
+                        <div class="w-75 an-hr"></div>
+                        <div class="an-post-widget-popular">
+                            <div class="media an-post-widget-popular-item">
+                                <img class="an-post-widget-popular-img" src="images/posts/post-mini-1.png" alt="popularny wpis">
+                                <div class="media-body">
+                                    <a class="mt-1 d-inline-block an-post-widget-link" href="#">Nowoczesny apartament bankietowy w Serocku</a>
+                                </div>
+                            </div>
+                            <div class="media an-post-widget-popular-item">
+                                <img class="an-post-widget-popular-img" src="images/posts/post-mini-2.png" alt="popularny wpis">
+                                <div class="media-body">
+                                    <a class="mt-1 d-inline-block an-post-widget-link" href="#">Wielorodzinny dom na obrzeżach Warszawy</a>
+                                </div>
+                            </div>
+                            <div class="media mb-2 an-post-widget-popular-item">
+                                <img class="an-post-widget-popular-img" src="images/posts/post-mini-3.png" alt="popularny wpis">
+                                <div class="media-body">
+                                    <a class="mt-1 d-inline-block an-post-widget-link" href="#">Rezydencja w stylu XIX wiecznym w okolicach Wrocławia</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Widget kategorie -->
+                    <div class="an-post-widget">
+                        <h4 class="text-uppercase an-post-widget-header">kategorie</h4>
+                        <div class="w-75 an-hr"></div>
+                        <div class="d-flex flex-wrap justify-content-left an-post-widget-categories">
+                            <a class="bg-primary text-white an-post-widget-link an-post-widget-categories-item" href="#">architektura</a>
+                            <a class="text-white an-post-widget-link an-post-widget-categories-item" href="#">wystrój</a>
+                            <a class="text-white an-post-widget-link an-post-widget-categories-item" href="#">projektowanie</a>
+                            <a class="text-white an-post-widget-link an-post-widget-categories-item" href="#">zieleń</a>
+                            <a class="text-white an-post-widget-link an-post-widget-categories-item" href="#">dokumentacja</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Stopka -->
+    <div class="an-footer-top">
+        <div class="container an-footer-top-content">
+            <div class="row">
+                <!-- pierwsza kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">O nas</h4>
+                    <p class="an-footer-text an-footer-p">Jesteśmy rodzinną firmą, która oferuje kompleksowe projekty architektoniczne zarówno dla podmiotów prywatnych jak i przedsiębiorstw, dla których ważne są walory estetyczne, podkreślające indywidualny charakter każdego wnętrza.</p>
+                </div>
+                <!-- druga kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">Nawigacja</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="an-footer-text" href="#">Regulamin serwisu</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">Logowanie na konto</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">Wsparcie techniczne</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">FAQ & Pomoc</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">Kariera</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- trzecia kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">Kontakt</h4>
+                    <ul class="list-unstyled an-footer-text an-footer-contact-list">
+                        <li class="an-footer-contact-item">
+                            <span class="mr-2"><img src="images/ui/contact-footer-icon-pin.png" alt="ikona mail"></span>
+                            ul. Sobieskiego 10
+                        </li>
+                        <li class="an-footer-contact-item">
+                            <span class="mr-2"><img src="images/ui/contact-footer-icon-phone.png" alt="ikona mail"></span>
+                            666-333-111
+                        </li>
+                        <li class="an-footer-contact-item">
+                            <span class="mr-2"><img src="images/ui/contact-footer-icon-email.png" alt="ikona mail"></span>
+                            bullssquad@biuro.pl
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-between w-75">
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-fb.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-inst.png" alt="instagram ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-pin.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-plus.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-twit.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <!-- czwarta kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">Newsletter</h4>
+                    <form action="">
+                        <div class="form-group an-newsletter-form-group">
+                            <label class="an-footer-text" for="email">Bądź na bieżąco z najważniejszymi wydarzeniami ze świata aranżacji wnetrz.</label>
+                            <input class="form-control form-control-sm w-75 an-newsletter-form-control" type="email" id="email" placeholder="Adres email">
+                        </div>
+                        <button class="btn btn-primary text-white text-uppercase an-newsletter-btn">Subskrybuj</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="an-copy">
+        <div class="container text-center">
+            <span class="d-block">&copy; Copyright 2020 <a href="http://niespialowski-portfolio.pl/">Andrzej Nieśpiałowski</a></span>
+            <span class="d-block an-copy-second">Graphics design by <a href="https://pixabay.com/">Pixabay</a></span>
+            <span class="d-block an-copy-second">Graphics design by <a href="https://unsplash.com/">Unsplash</a></span>
+        </div>
+    </div>
+
+</body>
+</html>

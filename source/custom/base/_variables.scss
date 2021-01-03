@@ -1,0 +1,60 @@
+// Własne zmienne - kolory
+$an-accent-color: linear-gradient(90deg, #deb887, #eda04e, #a65f23, #5b270b, #966f57, #e9ba81);
+$an-accent-color: #966f57;
+$an-gray-100: #f8f8f8;
+$an-gray-200: #eeeeee;
+$an-gray-600: #b7b7b7;
+$an-gray-800: #707070; 
+$an-gray-900: #444444;
+$an-white: #ffffff;
+$an-black: #000000;
+$an-input-bg: #fcfcfc;
+$an-input-border-color: darken($an-gray-200, 3%);
+$an-contact-form-shadow: #292c31;
+$an-product-search-btn-color: #cccccc;
+
+// Własne zmienne - tekst
+$an-font-family-body: 'Lato';
+$an-font-family-extra: 'Oswald';
+
+// Kolory Bootstrap 4
+$theme-colors: (
+    "primary": $an-accent-color
+);
+$gray-100: $an-gray-100;
+$gray-100: $an-gray-200;
+$gray-600: $an-gray-600;
+$gray-800: $an-gray-800;
+$gray-900: $an-gray-900;
+
+// Obramowania
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+// Tekst
+$font-family-sans-serif: $an-font-family-body;
+$headings-font-family: $an-font-family-extra;
+$headings-font-weight: 700;
+$font-size-base: .875rem;
+$line-height-base: 1.75;
+$font-size-sm: $font-size-base * .75;
+$h2-font-size: 2.143rem;
+$h3-font-size: 1.375rem;
+$h4-font-size: 1rem;
+$h5-font-size: .875rem;
+
+// Jumbotron
+$jumbotron-padding: 7rem;
+
+// input
+$input-group-addon-bg: $gray-800;
+$input-group-addon-border-color: none;
+$input-border-color: $an-input-border-color;
+
+// paginacja
+$pagination-color: $gray-900;
+$pagination-bg: none;
+$pagination-border-width: 0;
+$pagination-hover-color: $an-accent-color;
+$pagination-hover-bg: none;

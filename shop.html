@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Architektura Wnętrz - Bootstrap 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="bg-primary an-header">
+        <div class="container">
+            <ul class="nav flex-column flex-md-row justify-content-md-end text-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="index.html">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="post-list.html">Aktualności</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link an-header-item-link an-header-item-active" href="shop.html">Sklep</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="about.html">O nas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="contact.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="#">
+                        <img src="images/ui/icon-top-search.png" alt="wyszukiwarka">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="#">
+                        <img src="images/ui/top-cart-icon.png" alt="koszyk">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Unit -->
+    <div class="jumbotron text-center an-hero">
+        <div class="container an-hero-content">
+            <h1 class=" text-uppercase text-white an-hero-header">Aranżacja wnętrz</h1>
+            <img class="img-fluid an-hero-subheader" src="images/design-subheader.png" alt="shubheader">
+        </div>
+    </div>
+    
+    <!-- Lista produktów -->
+    <div class="an-product-list-page">
+        <div class="container">
+            <div class="text-center an-product-list-intro">
+                <span class="text-muted text-uppercase an-text-small an-page-intro-subheader">Projektowanie to nasza pasja</span>
+                <h2 class="text-uppercase an-page-intro-header">Sklep <span class="text-primary">online </span></h2>
+                <div class="an-hr an-page-intro-rule"></div>
+                <p class="mb-5 an-product-list-intro-desc">Zapraszamy do naszego sklepu on-line, gdzie mogą kupić Państwo szereg ciekawych akcesoriów do mieszkania, biura czy ogrodu.</p>
+            </div>
+        </div>
+        <!-- Wyszukiwarka produktów -->
+        <div class="an-product-search an-alternate-bg">
+            <div class="container">
+                <div class="input-group an-product-search-inner">
+                    <input class="form-control text-uppercase border-primary an-product-search-control an-product-search-input" type="search" placeholder="Wpisz czego szukasz">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary bg-white border-primary text-uppercase dropdown-toggle an-product-search-control an-product-search-categories">Kategorie</button>
+                    </div>
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary an-product-search-btn">
+                            <img src="images/ui/icon-top-search.png" alt="szukaj">
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Siatka produktów -->
+        <div class="container">
+            <div class="row an-products">
+                <!-- jeden produkt -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="an-product-item">
+                        <a class="d-flex justify-content-center an-product-item-img" href="product.html">
+                            <img class="align-self-center" src="images\pages\product-1-sm.png" alt="zdjęcie produktu">
+                        </a>
+                        <a class="an-product-item-link" href="product.html">
+                            <h5 class="text-uppercase an-product-name">Kosz wiklinowy</h5>
+                        </a>
+                        <p class="an-text-small an-product-item-desc">koszyk wiklinowy ręcznej roboty - idealny do ogrodu</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="an-product-price">65zł</span>
+                            <img src="images/ui/stars.png" alt="ocena produktu">
+                        </div>
+                    </div>
+                </div>
+                <!-- jeden produkt -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="an-product-item active">
+                        <a class="d-flex justify-content-center an-product-item-img" href="product.html">
+                            <img class="align-self-center" src="images\pages\product-2-sm.png" alt="zdjęcie produktu">
+                        </a>
+                        <div class="d-flex flex-column an-product-item-icons">
+                            <span class="d-flex justify-content-center bg-primary an-product-item-icon">
+                                <img class="align-self-center" src="images/ui/product-item-icon-1.png" alt="akcja 1">
+                            </span>
+                            <span class="d-flex justify-content-center an-product-item-icon">
+                                <img class="align-self-center" src="images/ui/product-item-icon-2.png" alt="akcja 1">
+                            </span>
+                            <span class="d-flex justify-content-center an-product-item-icon">
+                                <img class="align-self-center" src="images/ui/product-item-icon-3.png" alt="akcja 1">
+                            </span>
+                            <span class="d-flex justify-content-center an-product-item-icon">
+                                <img class="align-self-center" src="images/ui/product-item-icon-4.png" alt="akcja 1">
+                            </span>
+                        </div>
+                        <a class="an-product-item-link" href="product.html">
+                            <h5 class="text-uppercase an-product-name">Krzesło biurowe</h5>
+                        </a>
+                        <p class="an-text-small an-product-item-desc">wygodne, lekkie krzesło do biura, restauracji lub domu</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="an-product-price">48zł</span>
+                            <img src="images/ui/stars.png" alt="ocena produktu">
+                        </div>
+                    </div>
+                </div>
+                <!-- jeden produkt -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="an-product-item">
+                        <a class="d-flex justify-content-center an-product-item-img" href="product.html">
+                            <img class="align-self-center" src="images\pages\product-3-sm.png" alt="zdjęcie produktu">
+                        </a>
+                        <a class="an-product-item-link" href="product.html">
+                            <h5 class="text-uppercase an-product-name">Lampa</h5>
+                        </a>
+                        <p class="an-text-small an-product-item-desc">eneergooszczędna i ergonomiczna lampa</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="an-product-price">70zł</span>
+                            <img src="images/ui/stars.png" alt="ocena produktu">
+                        </div>
+                    </div>
+                </div>
+                <!-- jeden produkt -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="an-product-item">
+                        <a class="d-flex justify-content-center an-product-item-img" href="product.html">
+                            <img class="align-self-center" src="images\pages\product-4-sm.png" alt="zdjęcie produktu">
+                        </a>
+                        <a class="an-product-item-link" href="product.html">
+                            <h5 class="text-uppercase an-product-name">zegar ścienny</h5>
+                        </a>
+                        <p class="an-text-small an-product-item-desc">stylowy zegar ścienny - drewniany</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="an-product-price">35zł</span>
+                            <img src="images/ui/stars.png" alt="ocena produktu">
+                        </div>
+                    </div>
+                </div>
+                <!-- jeden produkt -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="an-product-item">
+                        <a class="d-flex justify-content-center an-product-item-img" href="product.html">
+                            <img class="align-self-center" src="images\pages\product-5-sm.png" alt="zdjęcie produktu">
+                        </a>
+                        <a class="an-product-item-link" href="product.html">
+                            <h5 class="text-uppercase an-product-name">Kanapa skórzana(XL)</h5>
+                        </a>
+                        <p class="an-text-small an-product-item-desc">wygodna, trzyosobowa kanapa skórzana</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="an-product-price">899zł</span>
+                            <img src="images/ui/stars.png" alt="ocena produktu">
+                        </div>
+                    </div>
+                </div>
+                <!-- jeden produkt -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="an-product-item">
+                        <a class="d-flex justify-content-center an-product-item-img" href="product.html">
+                            <img class="align-self-center" src="images\pages\product-6-sm.png" alt="zdjęcie produktu">
+                        </a>
+                        <a class="an-product-item-link" href="product.html">
+                            <h5 class="text-uppercase an-product-name">Kanapa skórzana(L)</h5>
+                        </a>
+                        <p class="an-text-small an-product-item-desc">wygodna, dwuosobowa kanapa skórzana</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="an-product-price">699zł</span>
+                            <img src="images/ui/stars.png" alt="ocena produktu">
+                        </div>
+                    </div>
+                </div>
+                <!-- jeden produkt -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="an-product-item">
+                        <a class="d-flex justify-content-center an-product-item-img" href="product.html">
+                            <img class="align-self-center" src="images\pages\product-7-sm.png" alt="zdjęcie produktu">
+                        </a>
+                        <a class="an-product-item-link" href="product.html">
+                            <h5 class="text-uppercase an-product-name">ramka biurowa</h5>
+                        </a>
+                        <p class="an-text-small an-product-item-desc">drewniana ramka na zdjęcie</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="an-product-price">30zł</span>
+                            <img src="images/ui/stars.png" alt="ocena produktu">
+                        </div>
+                    </div>
+                </div>
+                <!-- jeden produkt -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="an-product-item">
+                        <a class="d-flex justify-content-center an-product-item-img" href="product.html">
+                            <img class="align-self-center" src="images\pages\product-8-sm.png" alt="zdjęcie produktu">
+                        </a>
+                        <a class="an-product-item-link" href="product.html">
+                            <h5 class="text-uppercase an-product-name">krzesło salonowe</h5>
+                        </a>
+                        <p class="an-text-small an-product-item-desc">stylowe krzesło do salonu</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="an-product-price">69zł</span>
+                            <img src="images/ui/stars.png" alt="ocena produktu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!-- paginacja -->
+                    <div class="text-center an-pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#">&lt; poprzednia strona</a></li>
+                            <li class="page-item"><a class="page-link" href="#">następna strona &gt;</a></li>
+                        </ul>
+                    </div>   
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Stopka -->
+    <div class="an-footer-top">
+        <div class="container an-footer-top-content">
+            <div class="row">
+                <!-- pierwsza kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">O nas</h4>
+                    <p class="an-footer-text an-footer-p">Jesteśmy rodzinną firmą, która oferuje kompleksowe projekty architektoniczne zarówno dla podmiotów prywatnych jak i przedsiębiorstw, dla których ważne są walory estetyczne, podkreślające indywidualny charakter każdego wnętrza.</p>
+                </div>
+                <!-- druga kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">Nawigacja</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="an-footer-text" href="#">Regulamin serwisu</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">Logowanie na konto</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">Wsparcie techniczne</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">FAQ & Pomoc</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">Kariera</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- trzecia kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">Kontakt</h4>
+                    <ul class="list-unstyled an-footer-text an-footer-contact-list">
+                        <li class="an-footer-contact-item">
+                            <span class="mr-2"><img src="images/ui/contact-footer-icon-pin.png" alt="ikona mail"></span>
+                            ul. Sobieskiego 10
+                        </li>
+                        <li class="an-footer-contact-item">
+                            <span class="mr-2"><img src="images/ui/contact-footer-icon-phone.png" alt="ikona mail"></span>
+                            666-333-111
+                        </li>
+                        <li class="an-footer-contact-item">
+                            <span class="mr-2"><img src="images/ui/contact-footer-icon-email.png" alt="ikona mail"></span>
+                            bullssquad@biuro.pl
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-between w-75">
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-fb.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-inst.png" alt="instagram ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-pin.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-plus.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-twit.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <!-- czwarta kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">Newsletter</h4>
+                    <form action="">
+                        <div class="form-group an-newsletter-form-group">
+                            <label class="an-footer-text" for="email">Bądź na bieżąco z najważniejszymi wydarzeniami ze świata aranżacji wnetrz.</label>
+                            <input class="form-control form-control-sm w-75 an-newsletter-form-control" type="email" id="email" placeholder="Adres email">
+                        </div>
+                        <button class="btn btn-primary text-white text-uppercase an-newsletter-btn">Subskrybuj</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="an-copy">
+        <div class="container text-center">
+            <span class="d-block">&copy; Copyright 2020 <a href="http://niespialowski-portfolio.pl/">Andrzej Nieśpiałowski</a></span>
+            <span class="d-block an-copy-second">Graphics design by <a href="https://pixabay.com/">Pixabay</a></span>
+            <span class="d-block an-copy-second">Graphics design by <a href="https://unsplash.com/">Unsplash</a></span>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+.an-product-search {
+    padding: 42px 0;
+}
+
+.an-product-search-inner {
+    width: 100%;
+    height: 2.2rem;
+    margin: 0 auto;
+    @include media-breakpoint-up(lg) {
+        width: 40%;
+    }
+}
+
+.an-product-search-control {
+    font-family: $an-font-family-extra;
+    font-size: .625rem;
+    letter-spacing: .1rem;
+}
+
+.an-product-search-input {
+    padding-left: 1.25rem;
+}
+
+.an-product-search-categories {
+    color: $an-product-search-btn-color;
+    &:hover {
+        color: darken($an-product-search-btn-color, 20%);
+    }
+}
+
+.an-product-search-btn {
+    font-size: .5rem;
+}

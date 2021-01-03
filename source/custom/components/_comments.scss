@@ -1,0 +1,35 @@
+.an-comments {
+    padding: 45px 0 25px;
+}
+
+.an-comment {
+    padding-top: .75rem;
+}
+
+.an-comment-avatar {
+    margin-right: 1rem;
+    border-radius: 50%;
+    @include an-size(36px, 36px);
+}
+
+.an-comment-meta{
+    margin: .25rem 0;
+}
+
+.an-comment-username {
+    font-family: $an-font-family-extra;
+    font-weight: 700;
+    letter-spacing: .075rem;
+}
+
+.an-comment-date {
+    font-family: $an-font-family-extra;
+    font-size: .75rem;
+    letter-spacing: .1rem;
+}
+
+.an-comment-text {
+    margin-right: 4rem;
+    font-size: .75rem;
+    line-height: 2;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Architektura Wnętrz - Bootstrap 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="bg-primary an-header">
+        <div class="container">
+            <ul class="nav flex-column flex-md-row justify-content-md-end text-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="index.html">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link an-header-item-link an-header-item-active" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="post-list.html">Aktualności</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="shop.html">Sklep</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="about.html">O nas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="contact.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="#">
+                        <img src="images/ui/icon-top-search.png" alt="wyszukiwarka">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white an-header-item-link" href="#">
+                        <img src="images/ui/top-cart-icon.png" alt="koszyk">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Unit -->
+    <div class="jumbotron text-center an-hero">
+        <div class="container an-hero-content">
+            <h1 class=" text-uppercase text-white an-hero-header">Aranżacja wnętrz</h1>
+            <img class="img-fluid an-hero-subheader" src="images/design-subheader.png" alt="shubheader">
+        </div>
+    </div>
+    
+    <!-- Portfolio -->
+    <div class="an-portfolio-page">
+        <div class="container">
+            <ul class="nav nav-pills justify-content-center text-uppercase an-navigator">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Wszystkie projekty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Wnętrza</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Meble</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ogrody</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Lokale użytkowe</a>
+                </li>
+            </ul>
+            <!-- Boxy portfolio -->
+            <div class="d-flex flex-wrap justify-content-around justify-content-xl-between an-portfolio">
+                <div class="an-portfolio-item">
+                    <div class="an-portfolio-box-img an-portfolio-img-overlay">
+                        <img src="images/portfolio/portfolio-1.jpg" alt="realizacja 1">
+                    </div>
+                    <div class="text-white text-center an-portfolio-box-text">
+                        <h4 class="text-uppercase an-portfolio-box-header">Najnowszy projekt</h4>
+                        <div class="w-50 mx-auto an-hr"></div>
+                        <span class="d-block an-portfolio-item-info"><span class="text-uppercase">klient: </span>X Construction</span>
+                        <span class="d-block an-portfolio-item-info"><span class="text-uppercase">lokalizacja: </span>Warszawa</span>
+                        <span class="d-block an-portfolio-item-info"><span class="text-uppercase">powierzchnia: </span>120m2</span>
+                        <span class="d-block an-portfolio-item-info"><span class="text-uppercase">wartość: </span>90 000 pln</span>
+                    </div>
+                </div>
+                <div class="an-portfolio-item">
+                    <div class="an-portfolio-box-img">
+                        <img src="images/portfolio/portfolio-2.jpg" alt="realizacja 2">
+                    </div>
+                </div>
+                <div class="an-portfolio-item">
+                    <div class="an-portfolio-box-img">
+                        <img src="images/portfolio/portfolio-3.jpg" alt="realizacja 3">
+                    </div>
+                </div>
+                <div class="an-portfolio-item">
+                    <div class="an-portfolio-box-img">
+                        <img src="images/portfolio/portfolio-4.jpg" alt="realizacja 4">
+                    </div>
+                </div>
+                <div class="an-portfolio-item">
+                    <div class="an-portfolio-box-img">
+                        <img src="images/portfolio/portfolio-5.jpg" alt="realizacja 5">
+                    </div>
+                </div>
+                <div class="an-portfolio-item">
+                    <div class="an-portfolio-box-img">
+                        <img src="images/portfolio/portfolio-6.jpg" alt="realizacja 6">
+                    </div>
+                </div>
+                <div class="an-portfolio-item">
+                    <div class="an-portfolio-box-img">
+                        <img src="images/portfolio/portfolio-7.jpg" alt="realizacja 7">
+                    </div>
+                </div>
+                <div class="an-portfolio-item">
+                    <div class="an-portfolio-box-img">
+                        <img src="images/portfolio/portfolio-8.jpg" alt="realizacja 8">
+                    </div>
+                </div>
+                <div class="an-portfolio-item">
+                    <div class="an-portfolio-box-img">
+                        <img src="images/portfolio/portfolio-9.jpg" alt="realizacja 9">
+                    </div>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!-- paginacja -->
+                    <div class="text-center an-pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#">&lt; poprzednia strona</a></li>
+                            <li class="page-item"><a class="page-link" href="#">następna strona &gt;</a></li>
+                        </ul>
+                    </div>   
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Stopka -->
+    <div class="an-footer-top">
+        <div class="container an-footer-top-content">
+            <div class="row">
+                <!-- pierwsza kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">O nas</h4>
+                    <p class="an-footer-text an-footer-p">Jesteśmy rodzinną firmą, która oferuje kompleksowe projekty architektoniczne zarówno dla podmiotów prywatnych jak i przedsiębiorstw, dla których ważne są walory estetyczne, podkreślające indywidualny charakter każdego wnętrza.</p>
+                </div>
+                <!-- druga kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">Nawigacja</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="an-footer-text" href="#">Regulamin serwisu</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">Logowanie na konto</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">Wsparcie techniczne</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">FAQ & Pomoc</a>
+                        </li>
+                        <li>
+                            <a class="an-footer-text" href="#">Kariera</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- trzecia kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">Kontakt</h4>
+                    <ul class="list-unstyled an-footer-text an-footer-contact-list">
+                        <li class="an-footer-contact-item">
+                            <span class="mr-2"><img src="images/ui/contact-footer-icon-pin.png" alt="ikona mail"></span>
+                            ul. Sobieskiego 10
+                        </li>
+                        <li class="an-footer-contact-item">
+                            <span class="mr-2"><img src="images/ui/contact-footer-icon-phone.png" alt="ikona mail"></span>
+                            666-333-111
+                        </li>
+                        <li class="an-footer-contact-item">
+                            <span class="mr-2"><img src="images/ui/contact-footer-icon-email.png" alt="ikona mail"></span>
+                            bullssquad@biuro.pl
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-between w-75">
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-fb.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-inst.png" alt="instagram ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-pin.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-plus.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                        <span class="bg-primary text-center an-social-box">
+                            <a href="#">
+                                <img src="images/social/social-icon-twit.png" alt="facebook ikona">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <!-- czwarta kolumna -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <h4 class="text-uppercase text-white mb-3">Newsletter</h4>
+                    <form action="">
+                        <div class="form-group an-newsletter-form-group">
+                            <label class="an-footer-text" for="email">Bądź na bieżąco z najważniejszymi wydarzeniami ze świata aranżacji wnetrz.</label>
+                            <input class="form-control form-control-sm w-75 an-newsletter-form-control" type="email" id="email" placeholder="Adres email">
+                        </div>
+                        <button class="btn btn-primary text-white text-uppercase an-newsletter-btn">Subskrybuj</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="an-copy">
+        <div class="container text-center">
+            <span class="d-block">&copy; Copyright 2020 <a href="http://niespialowski-portfolio.pl/">Andrzej Nieśpiałowski</a></span>
+            <span class="d-block an-copy-second">Graphics design by <a href="https://pixabay.com/">Pixabay</a></span>
+            <span class="d-block an-copy-second">Graphics design by <a href="https://unsplash.com/">Unsplash</a></span>
+        </div>
+    </div>
+
+</body>
+</html>

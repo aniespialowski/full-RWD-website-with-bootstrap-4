@@ -1,0 +1,25 @@
+.an-about-img-shadow-box {
+    @media (min-width: 1200px) {
+		position: absolute;
+        top: -15px;
+        left: 38px;
+        background-color: rgba($an-black, .75);
+        @include an-size(538px, 228px);
+	}
+}
+
+.an-about-avatar {
+    margin: 1rem;
+    font-size: .66rem;
+}
+
+.an-about-avatar-img {
+    margin-bottom: 0.85rem;
+}
+
+.an-about-avatar-name {
+    font-family: $an-font-family-extra;
+    font-size: .9rem;
+    line-height: 1.2;
+    letter-spacing: .1rem; 
+}

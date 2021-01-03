@@ -1,0 +1,53 @@
+.an-portfolio-box {
+    position: relative;
+
+}
+
+.an-portfolio-box-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 65%;
+    margin: 0 auto;
+    z-index: 1000;
+    transform: translateY(-50%);
+}
+
+.an-portfolio-box-title {
+    margin-bottom: 1.2rem;
+    font-size: 1.55rem;
+    letter-spacing: .2rem;
+}
+
+.an-portfolio-box-img {
+    max-width: 620px
+}
+
+.an-portfolio-box.featured {
+    max-width: 620px;
+}
+
+.an-portfolio-img-overlay {
+    &:after {
+        @include an-bg-overlay($an-accent-color, .75);   
+    }
+}
+
+// style dla portfolio item
+.an-portfolio-item {
+    position: relative;
+    margin-bottom: 1.875rem;
+    .an-hr {
+        margin: 1rem 0;
+    }
+}
+
+.an-portfolio-item-info {
+    @include an-font-light-secondary;
+}
+
+.an-portfolio-box-header {
+    font-size: 1.125rem;
+    letter-spacing: .2rem;
+}

@@ -1,0 +1,22 @@
+.an-product-list-page {
+    padding: 40px 0 35px;
+    .an-product-search {
+        margin-bottom: 50px;
+    }
+}
+
+.an-product-list-intro {
+    width: 100%;
+    margin: 0 auto;
+    @include media-breakpoint-up(md) {
+        width: 50%;
+    }
+}
+
+.an-product-list-intro-desc {
+    font-weight: 300;
+}
+
+.an-products {
+    padding: 0 0 15px;
+}

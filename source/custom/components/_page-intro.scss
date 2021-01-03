@@ -1,0 +1,27 @@
+.an-page-intro-header {
+    line-height: 1;
+}
+
+.an-page-intro-subheader {
+    margin-top: 0;
+    letter-spacing: .1rem;
+    line-height: 1.2;
+}
+.an-page-intro-rule {
+    margin: 1.25rem 0;
+}
+
+img {
+    position: relative;
+}
+
+.an-page-intro-shadow-box {
+    @media (min-width: 1200px) {
+		position: absolute;
+        top: -25px;
+        left: 74px;
+        background-color: rgba($an-black, .75);
+        @include an-size(472px, 367px);
+	}
+    
+}

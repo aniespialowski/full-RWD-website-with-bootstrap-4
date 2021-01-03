@@ -1,0 +1,27 @@
+.an-hero {
+    position: relative;
+    margin-bottom: 0;
+    background: url('../images/bg/top-bg.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    &:after {
+        @include an-bg-overlay($an-black, .5);
+    }
+}
+
+.an-hero-content {
+    @include an-relative-zindex;  
+}
+
+.an-hero-header {
+    margin-bottom: .85rem;
+    letter-spacing: .55rem;
+    text-shadow: 0 2px 0 rgba($an-gray-900, 1);
+    @include media-breakpoint-up(md) {
+        font-size: 3.06rem;
+    }
+}
+
+.an-hero-subheader {
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 2px rgba($an-gray-900, 1));
+}
